@@ -1,0 +1,114 @@
+
+.product-card {
+    position: relative;
+
+    span.discount-span {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        background: #c24b5a;
+        border-radius: 10px;
+        padding: 3px 12px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 13px;
+    }
+    
+    .product-count {
+        position: absolute;
+        right: 5px;
+        display: flex;
+        flex-direction: column;
+        bottom: 10px;
+        max-width: 45px;
+    }
+
+    .active-star{
+        color: #e6b454;
+        font-size: 19px;
+    }
+    .passive-star {
+        filter: drop-shadow(0px 0px 1px gray);
+        color:white;
+        font-size: 19px;
+    }
+
+    .product-rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .product-title {
+        font-size:17px;
+        margin-bottom: 10px;
+    }
+
+    .product-price {
+        color: #c24b5a;
+
+        span {
+            color:gray;
+            text-decoration: line-through;
+        }
+    }
+    .css-5o008e-MuiCardContent-root:last-child {
+        padding-bottom: 12px;
+    }
+
+    .quantity-button {
+        border: 1px solid #c24b5a;
+        border-radius: 3px;
+
+        button {
+            padding: 3px;
+            color:#c24b5a;
+
+            svg {
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }
+
+    .quantity-amount {
+        font-weight: bold;
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    &:hover .product-action {
+        margin-top: -52px;
+    height: 37px;
+}
+}
+
+.product-action {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+    transition: .2s all;
+    background: white;
+    max-width: fit-content;
+    width: 125px;
+    background: white;
+    max-width: 125px;
+    padding: 5px 8px 1px 8px;
+    border-radius: 5px;
+    color: gray;
+    margin-top: 0;
+    height: 0;
+    overflow: hidden;
+
+    div:hover {
+        color: #c24b5a;
+    }
+    &:hover div {
+        cursor: pointer;
+    }
+}
+

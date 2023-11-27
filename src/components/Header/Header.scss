@@ -1,0 +1,34 @@
+.search-input {
+    min-width: 100%;
+}
+img.header-logo {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.header-search {
+    border: 1px solid lightgray;
+    max-width: 40%;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    align-items: center;
+    margin: auto;
+
+    button.search-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        background: #c24b5a;
+        color: white;
+        padding: 0 17px;
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
